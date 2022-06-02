@@ -6,11 +6,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
-    max-width: 1920px;
-    margin: auto;
 }
 .menu div{
-    padding-left: 10.1vw;
     position:fixed;
     z-index: 1;
     background-color: #FFF;
@@ -24,11 +21,12 @@
 .menu div h1{
     font-size: 1.8rem;
     font-weight: 800;
+    padding-right: 15vw;
 }
 ul{
     display:flex;
     justify-content: space-evenly;
-    padding-right: 10.5vw;
+    padding-right: vw;
 }
 li{
     padding-left: 2vw;
@@ -99,6 +97,7 @@ h5{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 1100px;
 }
 .products img{
     margin-bottom: 2rem;
