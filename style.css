@@ -6,6 +6,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+    max-width: 1920px;
+    margin: auto;
 }
 .menu div{
     padding-left: 10.1vw;
