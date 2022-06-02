@@ -7,8 +7,12 @@
     font-family: 'Montserrat', sans-serif;
     list-style: none;
 }
-.menu div{
+body{
+    padding-top:13vh;
+}
+.menu {
     position:fixed;
+    top: 0;
     z-index: 1;
     background-color: #FFF;
     width: 100%;
@@ -18,19 +22,24 @@
     justify-content: space-between;
 
 }
-.menu div h1{
+.menu h1{
     font-size: 1.8rem;
     font-weight: 800;
-    padding-right: 15vw;
+    margin-left: 5%;
+}
+.menu nav{
+    width: 40%;
+    margin-right: 5%;
 }
 ul{
+    width: 100%;
     display:flex;
     justify-content: space-evenly;
-    padding-right: vw;
 }
 li{
-    padding-left: 2vw;
-    font-size: 2.4vh;
+    width: 20%;
+    font-size: 1.5vw;
+    text-align: center;
 }
 li:hover{
     cursor:pointer;
@@ -88,10 +97,31 @@ h5{
 }
 .container{
     display:flex;
-    justify-content: center;
     background-color: white;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .products{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.products figure{
+    width: 22.5%;
+    overflow: hidden;
+    margin: 10px;
+}
+.products img{
+    width: 100%;
+}
+.products img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .5));
+    transition: all .7s;
+}
+/* .products{
     margin-top: 4rem;
     width:80vw;
     display:flex;
@@ -103,13 +133,14 @@ h5{
     margin-bottom: 2rem;
     width:15em;
     height:15em;
+    object-fit: contain;
 }
 .products img:hover {
     cursor: pointer;
     transform: scale(1.1);
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .5));
     transition: all .7s;
-}
+} */
 .end-page{
     background-color: #000;
     background:transparent;
@@ -128,9 +159,6 @@ h5{
     align-items: center;
     margin-left: 1.5vh;
 }
-.law{
-    margin-left: 3vw;
-}
 .social-midias img{
     height:1.4em;
     width:1.4em;
@@ -141,7 +169,23 @@ h5{
 footer{
     background-color: #f6f6f6;
 }
-@media (max-width:600px){
+.info{
+    display: flex;
+    width: 100%;
+}
+.reference{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.reference p{
+    font-size: 1.1vw;
+    margin-left: 5%;
+}
+
+/* @media (max-width:600px){
     ul{
         display:none;
     }
@@ -210,5 +254,94 @@ footer{
     }
     .btn-start::hover{
         cursor: pointer;
+    }
+} */
+@media (max-width:800px){
+    nav{
+        display:none;
+    }
+    .button-mobile{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .menu{
+        justify-content: center;
+        height:5vh;
+    }
+    .social-midias{
+        height:6Vh;
+        background-color: #7FDBD4;
+        margin-left: 0px;
+    }
+    .phrase{
+        position:absolute;
+        top: 45%;
+        left:10%;
+    }
+    .phrase button{
+        top: 110%;
+        font-size: 1.1rem;
+    }
+    .principal-image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .blueorange{
+        display: none;
+    }
+    .blueorangemobile{
+        display: initial;
+        object-fit: contain;
+        width: 100%;
+        position: relative;
+    }
+    .button-mobile{
+        color:#fff;
+    }
+    .end-page{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 35vh;
+        flex-wrap: wrap;
+    }
+    .buttontop{
+        margin-right: 5%;
+    }
+    .btn-start{
+        display: initial;
+        background-color: #333333;
+        color:#fff;
+        height:4vh;
+        font-size: small;
+    }
+    .btn-start::hover{
+        cursor: pointer;
+    }
+    .container{
+        margin-top: 66px;
+    }
+    .products{
+        flex-direction: column;
+        width: 80%;
+    }
+    .products figure {
+        width: 100%;
+        margin: 25px auto;
+    }
+    .info{
+        display: flex;
+        width: 100%;
+    }
+    .reference{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .reference p{
+        font-size: 2.5vw;
+        margin-left: 0%;
     }
 }
